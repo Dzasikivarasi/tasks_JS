@@ -10,12 +10,11 @@ let number = prompt('Введите число');
 
 number = +(number);
 if (isNaN(number)) {
-  alert(`Упс, кажется, вы ошиблись`); 
+  console.log('Упс, кажется, вы ошиблись');
 } else {
-  const even = number % 2 === 0;
-  if (even) {
-    alert(`Вы ввели четное число`); 
+  if (number % 2 === 0) {
+    console.log('Вы ввели четное число');
   } else {
-    alert(`Вы ввели нечетное число`); 
+    console.log('Вы ввели нечетное число');
   }
 };
